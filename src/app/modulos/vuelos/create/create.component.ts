@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { RutaModelo } from 'src/app/modelos/ruta.modelo';
 import { VueloModelo } from 'src/app/modelos/vuelo.model';
 import { RutasService } from 'src/app/servicios/rutas.service';
-import { VuelosService } from 'src/app/servicios/vuelos.service';
+import { VuelosService } from 'src/app/servicios/vuelo.service';
 import Swal from 'sweetalert2';
 
 @Component({

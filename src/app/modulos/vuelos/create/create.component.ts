@@ -47,13 +47,13 @@ export class CreateComponent implements OnInit {
 
   store() {
     let vuelo = new VueloModelo();
-    vuelo.nombrePiloto = this.fgValidacion.controls["nombre_piloto"].value + "";
-    vuelo.fechaInicio = this.fgValidacion.controls["fecha_inicio"].value + "";
-    vuelo.horaInicio = this.fgValidacion.controls["hora_inicio"].value + "";
+    vuelo.nombre_piloto = this.fgValidacion.controls["nombre_piloto"].value + "";
+    vuelo.fecha_inicio = this.fgValidacion.controls["fecha_inicio"].value + "";
+    vuelo.hora_inicio = this.fgValidacion.controls["hora_inicio"].value + "";
 
-    vuelo.fechaFin = this.fgValidacion.controls["fecha_fin"].value + "";
-    vuelo.horaFin = this.fgValidacion.controls["hora_fin"].value + "";
-    vuelo.asientosVendidos = this.fgValidacion.controls["asientos_vendidos"].value + "";
+    vuelo.fecha_fin = this.fgValidacion.controls["fecha_fin"].value + "";
+    vuelo.hora_fin = this.fgValidacion.controls["hora_fin"].value + "";
+    vuelo.asientos_vendidos = this.fgValidacion.controls["asientos_vendidos"].value + "";
     vuelo.ruta = this.fgValidacion.controls["ruta"].value + "";
     this.vuelosService.store(vuelo).subscribe((data: VueloModelo) => {
       Swal.fire('Creado correctamente!', '', 'success')

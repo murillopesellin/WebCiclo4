@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RutaModelo } from 'src/app/modelos/ruta.modelo';
-import { VueloModelo } from 'src/app/modelos/vuelo.usuario';
+import { VueloModelo } from 'src/app/modelos/vuelo.model';
 import { RutasService } from 'src/app/servicios/rutas.service';
 import { VuelosService } from 'src/app/servicios/vuelos.service';
 import Swal from 'sweetalert2';

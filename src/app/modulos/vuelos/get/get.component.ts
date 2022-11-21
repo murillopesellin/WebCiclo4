@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { VueloModelo } from 'src/app/modelos/vuelo.usuario';
+import { VueloModelo } from 'src/app/modelos/vuelo.model';
 import { VuelosService } from 'src/app/servicios/vuelos.service';
 import Swal from 'sweetalert2';
 

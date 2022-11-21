@@ -16,9 +16,9 @@ export class CreateComponent implements OnInit {
     nombre: ['', [Validators.required]],
     ciudad: ['', [Validators.required]],
     pais: ['', [Validators.required]],
-    coordX: ['', [Validators.required]],
-    coordY: ['', [Validators.required]],
-    siglas: ['', [Validators.required]],
+    coordenada_x: ['', [Validators.required]],
+    coordenada_y: ['', [Validators.required]],
+    sigla: ['', [Validators.required]],
     tipo: ['', [Validators.required]],
   });
 
@@ -38,9 +38,9 @@ export class CreateComponent implements OnInit {
     aeropuerto.nombre = this.fgValidacion.controls["nombre"].value + "";
     aeropuerto.ciudad = this.fgValidacion.controls["ciudad"].value + "";
     aeropuerto.pais = this.fgValidacion.controls["pais"].value + "";
-    aeropuerto.coordenada_x = this.fgValidacion.controls["coordX"].value + "";
-    aeropuerto.coordenada_y = this.fgValidacion.controls["coordY"].value + "";
-    aeropuerto.sigla = this.fgValidacion.controls["siglas"].value + "";
+    aeropuerto.coordenada_x = this.fgValidacion.controls["coordenada_x"].value + "";
+    aeropuerto.coordenada_y = this.fgValidacion.controls["coordenada_y"].value + "";
+    aeropuerto.sigla = this.fgValidacion.controls["sigla"].value + "";
     aeropuerto.tipo = this.fgValidacion.controls["tipo"].value + "";
     console.log(aeropuerto);
 

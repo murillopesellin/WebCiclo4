@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import { SeguridadService } from 'src/app/servicios/seguridad.service';
+import { Subscription } from 'rxjs';
+import { UsuarioModel } from 'src/app/modelos/usuario.model';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor( private seguridadService: SeguridadService) { }
+  
+  activeSession?: boolean = false;
+  subs: Subscription = new Subscription();
 
-  ngOnInit(): void {
+  ngOnInit(): void {this.subs = this.seguridadService.datosUsuarioSesion().subscribe((data: UsuarioModel) => {
+    console.log(data)
+      this.activeSession = data.isLoggedIn;
+})
   }
 
 }

@@ -10,6 +10,8 @@ import { IndexComponent } from './assets/index/index.component';
 import { CreateComponent } from './modulos/vuelos/create/create.component';
 import { EditComponent } from './modulos/vuelos/edit/edit.component';
 import { GetComponent } from './modulos/vuelos/get/get.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,10 @@ import { GetComponent } from './modulos/vuelos/get/get.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    RouterModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
